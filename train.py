@@ -94,6 +94,7 @@ def main():
 
 
 
+
     #
     # # Run after training is done and you've achieved good result
     # # on validation set, then run train_blend.py file to use information
@@ -105,9 +106,6 @@ def main():
     # import sys
     # sys.exit()
     # #make_prediction(model, test_loader)
-
-
-
 
     for epoch in range(config.NUM_EPOCHS):
         train_one_epoch(train_loader, model, optimizer, loss_fn, scaler, config.DEVICE)
